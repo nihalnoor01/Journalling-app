@@ -1,0 +1,132 @@
+/* client/src/App.css */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary { background: var(--primary-color); color: #fff; }
+.btn-secondary { background: var(--secondary-color); color: #fff; }
+.btn-danger { background: var(--danger-color); color: #fff; }
+
+.auth-container, .editor-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.auth-container input[type='text'],
+.auth-container input[type='email'],
+.auth-container input[type='password'],
+.editor-container input[type='text'],
+.editor-container select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.auth-container button, .editor-container button {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Journal Entry Card */
+.entry-card {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.entry-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+.tag {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.entry-actions {
+    margin-top: 1rem;
+}
+
+.quill {
+    background-color: #fff;
+}
+.dashboard-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
